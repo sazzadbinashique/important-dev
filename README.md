@@ -56,7 +56,17 @@
 * *Survey System*
 * *Domain Hosting System*
 
+***
 
+##### LAMP For Web Application delveloper 
 
-  
-    
+###### for laravel 5.8 and and all other extension shortcut command 
+
+* * sudo apt-get install php7.2 php7.2-common libapache2-mod-php7.2 php7.2-pear php7.2-mcrypt php7.2-curl php7.2-dev php7.2-gd php7.2-mbstring php7.2-zip php7.2-mysql php7.2-xml php-token-stream php7.2-cli php7.2-json *
+
+#### PHP Version Upgrade
+
+[Install or Upgrade to PHP 7.X on Ubuntu](https://techbrij.com/php-7-ubuntu-install-upgrade)
+
+### command for linux 
+* *:screenshot --fullpage info.png*
