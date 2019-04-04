@@ -67,6 +67,78 @@
 #### PHP Version Upgrade
 
 [Install or Upgrade to PHP 7.X on Ubuntu](https://techbrij.com/php-7-ubuntu-install-upgrade)
+[virtual Host for lamp on ubuntu](https://websiteforstudents.com/install-laravel-php-framework-on-ubuntu-16-04-17-10-18-04-with-apache2-and-php-7-2-support/)
 
 ### command for linux 
 * *:screenshot --fullpage info.png*
+
+
+# Vertual Host for Ubuntu lamp user
+
+
+#### Step One
+Use this line Terminal
+        
+	 sudo mkdir -p /var/www/html/example.com/public_html
+	
+#### Step Two
+Use this line Terminal
+
+    sudo chown -R $USER:$USER /var/www/html/example.com/public_html
+
+#### Step Three
+ Use this line Terminal for full permission
+
+    sudo chmod -R 755 /var/www/html
+
+
+#### Step Four
+ Use this line Terminal for demo page
+
+    nano /var/www/html/example.com/public_html/index.html
+    
+    * example 
+        <html>
+          <head>
+                <title>Welcome to Example.com!</title>
+          </head>
+        <body>
+             <h1>Success!  The example.com virtual host is working!</h1>
+         </body>
+        </html>
+
+#### Step Five
+ Use this line Terminal virtual host file / cp means copy 
+
+    sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/example.com.conf
+###### open host file 
+        sudo nano /etc/apache2/sites-available/example.com.conf
+###### Paste host file and change your own sites serveradmin, servername,serveralias and documentroot must be added
+        <VirtualHost *:80>
+            ServerAdmin admin@example.com 
+            ServerName example.com
+            ServerAlias www.example.com
+            DocumentRoot /var/www/example.com/public_html
+            ErrorLog ${APACHE_LOG_DIR}/error.log
+            CustomLog ${APACHE_LOG_DIR}/access.log combined
+        </VirtualHost>
+#### Step Six
+Use this line Terminal for enable new virtual file
+
+    sudo a2ensite example.com.conf
+#### Step Seven
+Use this line Terminal for apache2 restart
+
+    sudo service apache2 restart
+#### Step Eight
+Use this line Terminal for local hosts file
+
+     sudo nano /etc/hosts
+###### use as like below 
+        127.0.0.1   localhost
+        127.0.1.1   guest-desktop
+        127.0.0.2  example.com
+## Test Result 
+        http://example.com
+
+    
