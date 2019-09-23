@@ -67,7 +67,12 @@
 #### PHP Version Upgrade
 
 [Install or Upgrade to PHP 7.X on Ubuntu](https://techbrij.com/php-7-ubuntu-install-upgrade)
-[virtual Host for lamp on ubuntu](https://websiteforstudents.com/install-laravel-php-framework-on-ubuntu-16-04-17-10-18-04-with-apache2-and-php-7-2-support/)
+[left join in multiple tables](https://www.codeproject.com/Questions/693539/left-join-in-multiple-tables)
+
+
+#### For Sql 
+
+[sql query learning](https://gist.github.com/janikvonrotz/6e27788f662fcdbba3fb)
 
 ### command for linux 
 * *:screenshot --fullpage info.png*
@@ -142,3 +147,34 @@ Use this line Terminal for local hosts file
         http://example.com
 
     
+### Others
+বালুকাবেলায় সাইকেল বালিকা 
+বালির রাজত্বে তোমার পদ চারণ
+=====================================
+for word press -> 
+added config.php below ....  
+
+define( 'UPLOADS', 'wp-content/uploads' );
+
+last line added -> 
+ define('FS_METHOD', 'direct');
+......................................................................
+sudo chmod -R 777 /var/www/html/sweety/wp-content/
+======================================
+sudo  find /var/www -type d -exec chmod 755 {} \;
+sudo  find /var/www -type f -exec chmod 644 {} \;
+==================================================
+
+my new site http://sazzadbinashique.ashiknahid.com/
+
+username : Mou20v1m7F
+password : 3JtKBFPN@//m
+
+==========================================
+php artisan make:model Category -mcr
+
+
+### Need for Ubuntu 
+
+
+
