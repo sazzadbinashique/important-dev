@@ -176,5 +176,8 @@ php artisan make:model Category -mcr
 
 ### Need for Ubuntu 
 
+### Google analytics measurement on your site 
+https://developers.google.com/analytics/devguides/collection/gtagjs
+
 
 
