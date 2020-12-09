@@ -11,7 +11,7 @@ php artisan make:model Category -mcr
 ## Important Function for work 
 
 #### Input any number in Bengali and the following function will return the English number.
-```banglatoennumber
+```php
 function bn2enNumber ($number){
     $search_array= array("১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "০");
     $replace_array= array("1", "2", "3", "4", "5", "6", "7", "8", "9", "0");
@@ -21,7 +21,7 @@ function bn2enNumber ($number){
 }
 ```
 #### youtube link convert as embed link 
-```
+```php
 function convertYoutube($url) {
         return preg_replace(
             "/\s*[a-zA-Z\/\/:\.]*youtu(be.com\/watch\?v=|.be\/)([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i",
@@ -30,7 +30,7 @@ function convertYoutube($url) {
    }
   ```
 ####  PHP Random unique code generate 
-```
+```php
  function randdomCode($length = 8) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
@@ -43,8 +43,8 @@ function convertYoutube($url) {
 ```
 #### PHP Function for user IP Address 
 
-```
-private function getUserIpAddr() {
+```php
+function getUserIpAddr() {
         if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
             //ip from share internet
             $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -58,8 +58,8 @@ private function getUserIpAddr() {
     }
 ```
 #### PHP Function For Browser info  
-```
-    private function getBrowserWithVersion() {
+```php
+function getBrowserWithVersion() {
         $u_agent = isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '';
         $browser = 'Unknown';
         $platform = 'Unknown';
@@ -165,7 +165,9 @@ private function getUserIpAddr() {
     }
 
 ```
+
 ---
+
 ### LAMP For Web Application delveloper 
 
 ##### for laravel 5.8 and and all other extension shortcut command 
