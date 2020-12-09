@@ -1,14 +1,17 @@
 # Scope of Development 
+
 ---
-### laravel crud command (m=migration, c=controller r=resource)
+
+## Laravel
+#### laravel crud command (m=migration, c=controller r=resource)
 ```
 php artisan make:model Category -mcr
 ```
 ---
 ## Important Function for work 
 
-### Input any number in Bengali and the following function will return the English number.
-```bash
+#### Input any number in Bengali and the following function will return the English number.
+```banglatoennumber
 function bn2enNumber ($number){
     $search_array= array("১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "০");
     $replace_array= array("1", "2", "3", "4", "5", "6", "7", "8", "9", "0");
@@ -17,27 +20,33 @@ function bn2enNumber ($number){
     return $en_number;
 }
 ```
+---
+### LAMP For Web Application delveloper 
 
-
-##### LAMP For Web Application delveloper 
-
-###### for laravel 5.8 and and all other extension shortcut command 
+##### for laravel 5.8 and and all other extension shortcut command 
 
 * * sudo apt-get install php7.2 php7.2-common libapache2-mod-php7.2 php7.2-pear php7.2-mcrypt php7.2-curl php7.2-dev php7.2-gd php7.2-mbstring php7.2-zip php7.2-mysql php7.2-xml php-token-stream php7.2-cli php7.2-json *
 
-#### PHP Version Upgrade
+### PHP Version Upgrade
 
-[Install or Upgrade to PHP 7.X on Ubuntu](https://techbrij.com/php-7-ubuntu-install-upgrade)
-[left join in multiple tables](https://www.codeproject.com/Questions/693539/left-join-in-multiple-tables)
+* [Install or Upgrade to PHP 7.X on Ubuntu](https://techbrij.com/php-7-ubuntu-install-upgrade)
 
+---
 
 #### For Sql 
 
-[sql query learning](https://gist.github.com/janikvonrotz/6e27788f662fcdbba3fb)
+* [sql query learning](https://gist.github.com/janikvonrotz/6e27788f662fcdbba3fb)
+* [left join in multiple tables](https://www.codeproject.com/Questions/693539/left-join-in-multiple-tables)
+---
 
-### command for linux 
-* *:screenshot --fullpage info.png*
+### command for linux
+  Full Page screenShot  on console
 
+```full page
+ :screenshot --fullpage info.png*
+```
+
+---
 
 ## Vertual Host for Ubuntu lamp user
 
@@ -106,77 +115,59 @@ Use this line Terminal for local hosts file
 ## Test Result 
         http://example.com
 
+---
     
 ## For wordpress 
-added config.php below ....  
-
+added config.php below ...  
+```
 define( 'UPLOADS', 'wp-content/uploads' );
+```
+last line added ... 
+```
+define('FS_METHOD', 'direct');
+```
 
-last line added -> 
- define('FS_METHOD', 'direct');
-......................................................................
 ```
 sudo chmod -R 777 /var/www/html/sweety/wp-content/
 ```
-======================================
+---
+
 ### directory and file permision chaged command 
 ```
 sudo  find /var/www -type d -exec chmod 755 {} \;
 sudo  find /var/www -type f -exec chmod 644 {} \;
 ```
-==================================================
-
-
-
-
+---
 ### Google analytics measurement on your site 
-https://developers.google.com/analytics/devguides/collection/gtagjs
++ [Google Analytics](https://developers.google.com/analytics/devguides/collection/gtagjs)
 
+---
 
+## We Needed As Developer Webisite  
 
+---
+<table>
+<thead>
+<tr>
+ <th>Template Free </th>
+ <th>Admin Template</th>
+ <th>Blog Website</th>
+ <th>Social Website</th>
+ <th>Photography Website</th>
+</tr>
+</thead>
+<tbody>
+ <tr>
+ <td><a href="">AdminLite</a></td>
+ <td><a href="">AdminLite</a></td>
+ <td><a href="">AdminLite</a></td>
+ <td><a href="">AdminLite</a></td>
+ <td><a href="">AdminLite</a></td>
+</tr>
+</tbody>
+</table>
 
-##### How many type of project at markertpalce ...
-* *Enterprise Resouce planning*
-* *Human Resource Management System*
-* *Sales Management System*
-* *Hospital Management Information system* 
-* *Eloctronic Medical Record* 
-* *Radiology Information System* 
-* *Picture Archiving & Communication System* 
-* *Laboratory Infomation system* 
-* *Training Management system* 
-* *University Management System* 
-* *Mediacal college Management System* 
-* *Smart Home Solutions*
-* *Vat Management System*
-* *Ecommerece* 
-* *Payment Gateway*
-* *Api integration*
-* *Digital Wallet*
-* *Digital Bangking Application* 
-* *Network Management System*
-* *School Management System*
-* *Trafic Management System*
-* *Push Notication*
-* *Messaging System*
-* *Online Payment*
-* *Blogging System*
-* *Peronal Website*
-* *Photo Management System*
-* *Employee Monitoring System*
-* *Tracking System*
-* *SMS & Email System*
-* *HR & Payroll System*
-* *Banking Management System*
-* *News Portal System*
-* *Queue Management*
-* *Integration with other System*
-* *Testing System*
-* *Photographer System*
-* *Doctor Manage Appoinment Global*
-* *Smart Health Monitoring & information System*
-* *Survey System*
-* *Domain Hosting System*
+* *Enterprise Resource planning*
 
 ***
 
