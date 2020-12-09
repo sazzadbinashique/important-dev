@@ -1,62 +1,23 @@
 # Scope of Development 
 ---
+### laravel crud command (m=migration, c=controller r=resource)
+```
+php artisan make:model Category -mcr
+```
+---
+## Important Function for work 
 
-#### Six Different types of Web Application 
-1. Static Web Application 
-2. Dynamic Web Application    
-3. Online Store and E-Commerce 
-4. Portal Web Application 
-5. Animated Web Application
-6. web Application with Content Management System
+### Input any number in Bengali and the following function will return the English number.
+```bash
+function bn2enNumber ($number){
+    $search_array= array("১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "০");
+    $replace_array= array("1", "2", "3", "4", "5", "6", "7", "8", "9", "0");
+    $en_number = str_replace($search_array, $replace_array, $number);
 
-##### How many project at markertpalce ...
+    return $en_number;
+}
+```
 
-    1. Somethings 
-    2. Somethings
-
-* *Enterprise Resouce planning*
-* *Human Resource Management System*
-* *Sales Management System*
-* *Hospital Management Information system* 
-* *Eloctronic Medical Record* 
-* *Radiology Information System* 
-* *Picture Archiving & Communication System* 
-* *Laboratory Infomation system* 
-* *Training Management system* 
-* *University Management System* 
-* *Mediacal college Management System* 
-* *Smart Home Solutions*
-* *Vat Management System*
-* *Ecommerece* 
-* *Payment Gateway*
-* *Api integration*
-* *Digital Wallet*
-* *Digital Bangking Application* 
-* *Network Management System*
-* *School Management System*
-* *Trafic Management System*
-* *Push Notication*
-* *Messaging System*
-* *Online Payment*
-* *Blogging System*
-* *Peronal Website*
-* *Photo Management System*
-* *Employee Monitoring System*
-* *Tracking System*
-* *SMS & Email System*
-* *HR & Payroll System*
-* *Banking Management System*
-* *News Portal System*
-* *Queue Management*
-* *Integration with other System*
-* *Testing System*
-* *Photographer System*
-* *Doctor Manage Appoinment Global*
-* *Smart Health Monitoring & information System*
-* *Survey System*
-* *Domain Hosting System*
-
-***
 
 ##### LAMP For Web Application delveloper 
 
@@ -78,8 +39,7 @@
 * *:screenshot --fullpage info.png*
 
 
-# Vertual Host for Ubuntu lamp user
-
+## Vertual Host for Ubuntu lamp user
 
 #### Step One
 Use this line Terminal
@@ -147,11 +107,7 @@ Use this line Terminal for local hosts file
         http://example.com
 
     
-### Others
-বালুকাবেলায় সাইকেল বালিকা 
-বালির রাজত্বে তোমার পদ চারণ
-=====================================
-for word press -> 
+## For wordpress 
 added config.php below ....  
 
 define( 'UPLOADS', 'wp-content/uploads' );
@@ -159,37 +115,70 @@ define( 'UPLOADS', 'wp-content/uploads' );
 last line added -> 
  define('FS_METHOD', 'direct');
 ......................................................................
+```
 sudo chmod -R 777 /var/www/html/sweety/wp-content/
+```
 ======================================
+### directory and file permision chaged command 
+```
 sudo  find /var/www -type d -exec chmod 755 {} \;
 sudo  find /var/www -type f -exec chmod 644 {} \;
+```
 ==================================================
 
-my new site http://sazzadbinashique.ashiknahid.com/
-
-username : Mou20v1m7F
-password : 3JtKBFPN@//m
-
-==========================================
-php artisan make:model Category -mcr
 
 
-### Need for Ubuntu 
 
 ### Google analytics measurement on your site 
 https://developers.google.com/analytics/devguides/collection/gtagjs
 
 
 
-### Input any number in Bengali and the following function will return the English number.
 
-function bn2enNumber ($number){
-    $search_array= array("১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯", "০");
-    $replace_array= array("1", "2", "3", "4", "5", "6", "7", "8", "9", "0");
-    $en_number = str_replace($search_array, $replace_array, $number);
+##### How many type of project at markertpalce ...
+* *Enterprise Resouce planning*
+* *Human Resource Management System*
+* *Sales Management System*
+* *Hospital Management Information system* 
+* *Eloctronic Medical Record* 
+* *Radiology Information System* 
+* *Picture Archiving & Communication System* 
+* *Laboratory Infomation system* 
+* *Training Management system* 
+* *University Management System* 
+* *Mediacal college Management System* 
+* *Smart Home Solutions*
+* *Vat Management System*
+* *Ecommerece* 
+* *Payment Gateway*
+* *Api integration*
+* *Digital Wallet*
+* *Digital Bangking Application* 
+* *Network Management System*
+* *School Management System*
+* *Trafic Management System*
+* *Push Notication*
+* *Messaging System*
+* *Online Payment*
+* *Blogging System*
+* *Peronal Website*
+* *Photo Management System*
+* *Employee Monitoring System*
+* *Tracking System*
+* *SMS & Email System*
+* *HR & Payroll System*
+* *Banking Management System*
+* *News Portal System*
+* *Queue Management*
+* *Integration with other System*
+* *Testing System*
+* *Photographer System*
+* *Doctor Manage Appoinment Global*
+* *Smart Health Monitoring & information System*
+* *Survey System*
+* *Domain Hosting System*
 
-    return $en_number;
-}
+***
 
 
 
